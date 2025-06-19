@@ -1,0 +1,343 @@
+/* Import Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Sansita:ital@1&family=Saira+Stencil+One&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: url('./img/1642430765_2-abrakadabra-fun-p-fon-dlya-vizitki-minimalizm-2.jpg') no-repeat center top/cover;
+    background-attachment: fixed;
+    color: black;
+    overflow-x: hidden;
+    line-height: 1.6;
+}
+
+section {
+    position: relative;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    border-bottom: 1px solid #fff;
+}
+
+.developer {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.fa-user-tie {
+    font-size: 1.5rem;
+}
+
+.nameInf {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.names {
+    font-family: 'Saira Stencil One', sans-serif;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+}
+
+.frontend a {
+    font-size: 1rem;
+    color: #ddd;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.navigationList {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.navigationList a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Sansita', sans-serif;
+    transition: color 0.3s ease;
+}
+
+.navigationList a:hover {
+    color: #ddd;
+}
+
+.main {
+    width: 90%;
+    margin: 5rem auto 0;
+}
+
+.firstName h1 {
+    font-family: 'Saira Stencil One', sans-serif;
+    font-size: 2.5rem;
+    color: black;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.btnContact {
+    display: inline-block;
+    background: #eee;
+    ;
+    color: #000;
+    padding: 0.75rem 2rem;
+    border-radius: 10px;
+    border: none;
+    font-family: 'Sansita', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    border: 1px solid black;
+}
+
+.btnContact:hover {
+    background: #fff;
+}
+
+.contactMe {
+    text-decoration: none;
+    color: #000;
+}
+
+.myText {
+    background: rgba(255, 255, 255, 0.8);
+    width: 50%;
+    border-radius: 10px;
+    left: 45%;
+    position: relative;
+    margin-bottom: 10vh;
+}
+
+.myText:hover {
+    background: rgba(255, 255, 255, 1);
+}
+
+.myText p {
+    padding: 5%;
+    color: black;
+    opacity: 1;
+    z-index: 12;
+    opacity: 1;
+}
+
+.skills {
+    font-size: 2rem;
+    font-family: 'Sansita', sans-serif;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.scheduleContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.skill {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+    transition: background 0.3s ease;
+}
+
+.skill:hover {
+    background: rgba(255, 255, 255, 1);
+}
+
+.skill h1 {
+    font-family: 'Sansita', sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.container__skill {
+    display: flex;
+    gap: 20px;
+}
+
+.soulMe {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4rem;
+    margin-top: 4rem;
+    background: rgba(255, 255, 255, 0.8);
+    width: 100%;
+    margin-bottom: 10vh;
+}
+
+.soulMe h1,
+.soulMe h2 {
+    font-family: 'Sansita', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 24px;
+    padding: 10px 40px 0 50px;
+}
+
+.soulMe p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    text-align: center;
+    padding: 20px 40px 0 50px;
+}
+
+.soulMe img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.soulMe:hover {
+    background: rgba(255, 255, 255, 1);
+}
+
+.work h1 {
+    font-family: 'Sansita', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.containerIntWork {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 3rem;
+    gap: 1rem;
+}
+
+.intWork {
+    width: 100%;
+    max-width: 600px;
+    display: none;
+}
+
+.intWork:first-child {
+    display: block;
+}
+
+.intWork img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.fa-left-long,
+.fa-right-long {
+    font-size: 2rem;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.fa-left-long {
+    left: -2rem;
+}
+
+.fa-right-long {
+    right: -2rem;
+}
+
+.communication {
+    display: grid;
+    gap: 2rem;
+    margin-top: 4rem;
+}
+
+.myCommunication h1 {
+    font-family: 'Sansita', sans-serif;
+    font-size: 2rem;
+}
+
+.myCommunication h2 {
+    font-family: 'Sansita', sans-serif;
+    font-size: 1.5rem;
+}
+
+.inputCom {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.inputCom input,
+.inputCom .btn {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-top: 1rem;
+}
+
+.inputCom input {
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+.inputCom input::placeholder {
+    color: #ddd;
+}
+
+.btn {
+    background: #fff;
+    color: #000;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Sansita', sans-serif;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #eee;
+}
+
+.finish {
+    background: #444;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 4rem;
+    font-family: 'Sansita', sans-serif;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+#background {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .soulMe {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .communication {
+        grid-template-columns: 1fr 1fr;
+    }
+}
