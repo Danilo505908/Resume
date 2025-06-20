@@ -6,158 +6,142 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e33d6a15f9.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header class="header">
-        <section class='developer'>
+        <div class="developer">
             <i class="fa-solid fa-user-tie"></i>
-            <ul class="nameInf">
-                <li>
-                    <a class="names" href="me">Danya
-                        Khmaruk
-                    </a>
-                </li>
-                <li class="frontend" href="#me">
-                    <a href="#">frontend developer</a>
-                </li>
-            </ul>
-        </section>
-        <section class="navigation">
+            <div class="nameInf">
+                <a class="names" href="#me">Danya Khmaruk</a>
+                <div class="frontend">
+                    <a href="#me">Frontend Developer</a>
+                </div>
+            </div>
+        </div>
+        <nav class="navigation">
             <ul class="navigationList">
-                <li><a href="#about">about</a></li>
-                <li><a href="#works">works</a></li>
-                <li><a href="#contact">contact</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#works">Works</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
-        </section>
+        </nav>
     </header>
 
-    <main>
-        <section class="main">
-            <section>
-                <div class="firstName">
-                    <h1 id="frDevelop">frontend developer</h1>
+    <main class="main">
+        <section class="container-hero">
+            <h1 class="firstName" id="frDevelop">Frontend Developer</h1>
+            <button class="btnContact">
+                <a href="#contact" class="contactMe">Contact Me</a>
+            </button>
+            <div class="myText" id="me">
+                <p>Hi, I'm Danya, a junior front-end developer from Kyiv, Ukraine. I'm passionate about designing
+                    modern, responsive websites and enjoy bringing ideas to life in the browser.
+                    When you're doing what you love, the process becomes the reward, and the desire to grow never
+                    stops.</p>
+            </div>
+        </section>
+
+        <section class="skills-section container">
+            <h2 class="skills">About My Skills</h2>
+            <div class="scheduleContainer">
+                <div class="container__skill">
+                    <div class="skill">
+                        <h3>HTML</h3>
+                        <p>I confidently write clean and semantic HTML to build accessible and structured content.</p>
+                    </div>
+                    <div class="skill">
+                        <h3>CSS</h3>
+                        <p>I use CSS to create responsive layouts and modern visual designs for various screen sizes.
+                        </p>
+                    </div>
+                    <div class="skill">
+                        <h3>JS</h3>
+                        <p>I understand core JavaScript concepts and use them to develop interactive UI components.</p>
+                    </div>
                 </div>
-                <button class="btnContact">
-                    <a href="#contact" class="contactMe">
-                        <span class="contactMe frDevelop">Contact me</span>
-                    </a>
-                </button>
-                <div class='myText' id='me'>
-                    <p>Hi, I'm Danya, a junior front-end developer from Kyiv, Ukraine. I'm passionate about designing
-                        modern, responsive websites and enjoy bringing ideas to life in the browser.
-                        When you're doing what you love, the process becomes the reward, and the desire to grow never
-                        stops.</p>
+                <div class="container__skill">
+                    <div class="skill">
+                        <h3>React</h3>
+                        <p>I work with React to develop dynamic interfaces, using components, props, and hooks.</p>
+                    </div>
+                    <div class="skill">
+                        <h3>SCSS</h3>
+                        <p>I utilize SCSS for modular and efficient styling, maintaining readability and scalability.
+                        </p>
+                    </div>
+                    <div class="skill">
+                        <h3>DOM</h3>
+                        <p>I manipulate the DOM to build rich, interactive web experiences using vanilla JavaScript.</p>
+                    </div>
                 </div>
-                <h1 class="skills">About my skills</h1>
-                <div class="scheduleContainer">
-                    <div class="container__skill">
-                        <div class="skill">
-                            <h1>HTML</h1>
-                            <p>I confidently write clean and semantic HTML to build accessible and structured content.
-                            </p>
-                        </div>
-                        <div class="skill">
-                            <h1>CSS</h1>
-                            <p>I use CSS to create responsive layouts and modern visual designs for various screen
-                                sizes.
-                            </p>
-                        </div>
-                        <div class="skill">
-                            <h1>JS</h1>
-                            <p>I understand core JavaScript concepts and use them to develop interactive UI components.
-                            </p>
-                        </div>
+            </div>
+        </section>
+
+        <section class="soulMe container" id="about">
+            <div class="about-content">
+                <h2>About Me</h2>
+                <h3>Motivated Junior Front-End Developer with a Passion for Progress</h3>
+                <p>I'm Danya, a focused and motivated front-end developer aiming to improve my skills and contribute to
+                    exciting web projects. I love exploring new technologies and applying them to real-world challenges.
+                </p>
+                <p>I thrive in team environments and enjoy collaborating to create smooth, user-friendly solutions. I'm
+                    always open to learning and growing with every experience.</p>
+                <p>Currently, I'm seeking an opportunity to apply my knowledge in a professional setting and make a
+                    meaningful impact through thoughtful design and development.</p>
+            </div>
+            <img src="./img/me.jpeg" alt="Danya Khmaruk" class="about-img">
+        </section>
+
+        <section class="work container" id="works">
+            <h2>Portfolio</h2>
+            <div class="containerIntWork">
+                <i class="fa-solid fa-left-long" id="left" aria-label="Previous project"></i>
+                <div class="portfolio-wrapper">
+                    <div class="intWork">
+                        <a href="https://danilo505908.github.io/goit-markup-hw-06/">
+                            <img src="./img/goit-markup-hw-06.png" alt="GoIT Markup HW-06 Project">
+                        </a>
                     </div>
-                    <div class="container__skill">
-                        <div class="skill">
-                            <h1>REACT</h1>
-                            <p>I work with React to develop dynamic interfaces, using components, props, and hooks.
-                            </p>
-                        </div>
-                        <div class="skill">
-                            <h1>SCSS</h1>
-                            <p>I utilize SCSS for modular and efficient styling, maintaining readability and
-                                scalability.
-                            </p>
-                        </div>
-                        <div class="skill">
-                            <h1>DOM</h1>
-                            <p>I manipulate the DOM to build rich, interactive web experiences using vanilla
-                                JavaScript.</p>
-                        </div>
+                    <div class="intWork">
+                        <a href="https://koselevn.github.io/star-team/">
+                            <img src="./img/star-team.png" alt="Star Team Project">
+                        </a>
                     </div>
-                    <section class="soulMe" id="about">
-                        <div>
-                            <h1>about me</h1>
-                            <h2>Motivated Junior Front-End Developer with a Passion for Progress</h2>
-                            <p>I'm Danya, a focused and motivated front-end developer aiming to improve my skills
-                                and
-                                contribute to exciting web projects. I love exploring new technologies and applying
-                                them to
-                                real-world challenges.</p>
-                            <p>I thrive in team environments and enjoy collaborating to create smooth, user-friendly
-                                solutions. I'm always open to learning and growing with every experience.</p>
-                            <p>Currently, I'm seeking an opportunity to apply my knowledge in a professional setting
-                                and
-                                make a meaningful impact through thoughtful design and development.</p>
-                        </div>
-                        <img src="./img/me.jpeg" alt="me" height="700">
-                    </section>
-                    <section class="work" id="works">
-                        <h1>Portfolio</h1>
-                        <div class="containerIntWork">
-                            <i class="fa-solid fa-left-long" id="left"></i>
-                            <div>
-                                <div class="intWork"><a href="https://ironytonio.github.io/Clock"><img
-                                            src='./img/Screenshot_1.png' /></a></div>
-                                <div class="intWork way way"><a href="https://github.com/ironytonio/Travel"><img
-                                            src='./img/Screenshot_5.png' /></a></div>
-                                <div class="intWork way way"><a href="https://ironytonio.github.io/Drink-water/"><img
-                                            src='./img/Screenshot_2.png' /></a></div>
-                                <div class="intWork way way"><a
-                                        href="https://ironytonio.github.io/Movies-for-the-evening/"><img
-                                            src='./img/Screenshot_3.png' /></a></div>
-                                <div class="intWork way way"><a href="https://ironytonio.github.io/Paint/"><img
-                                            src='./img/Screenshot_4.png' /></a></div>
-                                <div class="intWork way way"><a href="https://ironytonio.github.io/slide/"><img
-                                            src='./img/Screenshot_6.png' /></a></div>
-                                <div class="intWork way way"><a href="https://github.com/ironytonio/justShopReact"><img
-                                            src='./img/Screenshot_7.png' /></a></div>
-                                <div class="intWork way way"><a
-                                        href="https://ironytonio.github.io/shop/index.html#"><img
-                                            src='./img/Screenshot_8.png' /></a></div>
-                                <div class="intWork way way"><a href="https://ironytonio.github.io/password/"><img
-                                            src='./img/Screenshot_9.png' /></a></div>
-                            </div>
-                            <i class="fa-solid fa-right-long" id="right"></i>
-                        </div>
-                    </section>
-                    <section class="communication" id="contact">
-                        <div class="myCommunication">
-                            <h1>Contact with me</h1>
-                            <h2>I’m open to communication and excited to hear from you.</h2>
-                            <h2>+380 (97) 912 05 75</h2>
-                            <h2>danahmaruk91@gmail.com</h2>
-                        </div>
-                        <form class="inputCom" action="https://formspree.io/f/mqkrebwb" method="POST">
-                            <input type="text" placeholder="Name" name="name">
-                            <input type="email" placeholder="Email" name="Email">
-                            <input type="text" placeholder="Message" name="Message">
-                            <button class="btn" type="submit">CONTACT ME</button>
-                        </form>
-                    </section>
-                    <div class="finish">
-                        <h1>Thank you for your attention</h1>
+                    <div class="intWork">
+                        <a href="https://danilo505908.github.io/Green-palette/">
+                            <img src="./img/green-palette.png" alt="Green Palette Project">
+                        </a>
                     </div>
-            </section>
+                </div>
+                <i class="fa-solid fa-right-long" id="right" aria-label="Next project"></i>
+            </div>
+        </section>
+
+        <section class="communication container" id="contact">
+            <div class="myCommunication">
+                <h2>Contact With Me</h2>
+                <h3>I’m open to communication and excited to hear from you.</h3>
+                <h3>+380 (97) 912 05 75</h3>
+                <h3>danahmaruk91@gmail.com</h3>
+            </div>
+            <form class="inputCom" action="https://formspree.io/f/mqkrebwb" method="POST">
+                <input type="text" placeholder="Name" name="name" required>
+                <input type="email" placeholder="Email" name="email" required>
+                <textarea placeholder="Message" name="message" required></textarea>
+                <button class="btn" type="submit">Contact Me</button>
+            </form>
+        </section>
+
+        <section class="finish container">
+            <h2>Thank You for Your Attention</h2>
         </section>
     </main>
 
     <div id="background"></div>
 
     <script src="script.js"></script>
-    <script src="https://kit.fontawesome.com/e33d6a15f9.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
